@@ -3,13 +3,13 @@
 	/* istanbul ignore if  */
 	if ( typeof define === "function" && define.amd ) {
 		// AMD. Register as an anonymous module.
-		define( [ "lodash" ], function( _ ) {
+		define( [ "underscore" ], function( _ ) {
 			return factory( _, root );
 		} );
 	/* istanbul ignore else */
 	} else if ( typeof module === "object" && module.exports ) {
 		// Node, or CommonJS-Like environments
-		module.exports = factory( require( "lodash" ), this );
+		module.exports = factory( require( "underscore" ), this );
 	} else {
 		// Browser globals
 		root.postal = factory( root._, root );
