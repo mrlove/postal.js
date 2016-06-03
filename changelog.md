@@ -1,4 +1,4 @@
-## v1.0.7
+## Current
 
 * Included @derickbailey's awesome logo addition!
 * Updated gulp build setup to run formatting on src and lib.
